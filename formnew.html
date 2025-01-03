@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Centering and Background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        /* Form Container Styling */
+        form {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        /* Input Fields Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Radio Buttons and Checkbox */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Submit Button Styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Course Section Padding */
+        p {
+            margin-top: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Student Registration Form</h3>
+        
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <p>Course:</p>
+        <input type="radio" id="mba" name="course" value="MBA">
+        <label for="mba">MBA</label><br>
+        <input type="radio" id="mca" name="course" value="MCA">
+        <label for="mca">MCA</label><br>
+        <input type="radio" id="msw" name="course" value="MSW">
+        <label for="msw">MSW</label><br>
+        <input type="radio" id="mtech" name="course" value="MTech">
+        <label for="mtech">MTech</label>
+        
+        <label for="bloodgroup">Blood Group:</label>
+        <input type="text" id="bloodgroup" name="bloodgroup">
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
